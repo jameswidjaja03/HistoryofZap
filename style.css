@@ -1,0 +1,75 @@
+/* Resetting default margin, padding, and font for the body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  background-color: black; /* Setting the background color of the body */
+  color: white; /* Setting the text color */
+}
+
+/* Container for the entire webpage content */
+.flexbox-container {
+  display: flex;
+  flex-direction: column; /* Layout items in a column */
+  align-items: center; /* Center align items horizontally */
+}
+
+/* Title of the project */
+.project-title {
+  font-family: fantasy;
+  font-size: 200px; /* Setting font size */
+  margin-bottom: 20px; /* Adding space below the title */
+}
+
+/* Container for each scene */
+.scene-container {
+  display: flex;
+  flex-direction: column; /* Layout items in a column */
+  margin-bottom: 50px; /* Adding space below each scene */
+  flex-grow: 1; /* Allowing scene containers to grow vertically */
+}
+
+/* Container for the rectangles */
+.rectangle {
+  background-color: black; /* Setting background color */
+  color: black; /* Setting text color */
+  width: 1800px; /* Setting width */
+  height: 800px; /* Setting height */
+  display: flex;
+  justify-content: center; /* Center align content horizontally */
+  align-items: center; /* Center align content vertically */
+}
+
+/* Description for each scene */
+.scene-description {
+  margin-top: 40px; /* Adding space above the description */
+  margin-bottom: 40px; /* Adding space below the description */
+  text-align: center; /* Center align text */
+  font-size: 38px; /* Setting font size */
+  max-width: 1800px; /* Setting maximum width to match the sketch width */
+}
+
+/* Container for two scenes side by side */
+.square-container {
+  display: flex;
+  justify-content: space-between; /* Space between each square */
+  width: 100%; /* Setting width to 100% */
+  max-width: 1800px; /* Setting maximum width */
+  margin-top: 80px; /* Adding space above the container */
+}
+
+/* Individual square container */
+.square {
+  background-color: black; /* Setting background color */
+  color: black; /* Setting text color */
+  width: calc(50% - 10px); /* Setting width for each square */
+  height: 800px; /* Setting height */
+  display: flex;
+  justify-content: center; /* Center align content horizontally */
+  align-items: center; /* Center align content vertically */
+}
+
+/* Styling for the p5 canvas container */
+.p5-canvas-container {
+  margin-top: 70px; /* Adding space above the canvas */
+}
